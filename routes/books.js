@@ -84,5 +84,12 @@ router.delete('/books/:id', (req, res, next)=>{
     knex('books').where('id', req.params.id).del()
   })
 })
+router.use((err, req, res, next)=> {
+  const status = err.status || 500
+  res.status(status).json({error: err})
+})
+router.use((req, res, next)=> {
+res.status(404).json({error:{ message: 'Not Found'}})
+})
 
 module.exports = router;
