@@ -17,5 +17,6 @@ The [solutions](https://github.com/gSchool/galvanize-bookshelf-solution) are ava
 
 #### [⇐ Previous](6_heroku_deployment.md) | [Next ⇒](1_migrations_seeds.md)
 
+the heroku link
 
 https://mirtau-galvanize-bookshelf.herokuapp.com/
